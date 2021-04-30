@@ -18,8 +18,7 @@ docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
  La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile  
  Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un pounto así ```cmd
- docker build . -t nombre_imagen
- ```
+ docker build . -t nombre_imagen```
 
 Para correr la imagen una vez creada:  
 ```cmd
