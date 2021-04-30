@@ -17,7 +17,7 @@ Para lanzar el Dockerfile y construir la imagen se utiliza el comando:
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
  La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile  
- Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un pounto así ```docker build . -t nombre_imagen```
+ Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un punto ```docker build . -t nombre_imagen```
 
 Para correr la imagen una vez creada:  
 ```cmd
