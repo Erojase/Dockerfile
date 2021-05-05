@@ -21,7 +21,7 @@ docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 
 Para correr la imagen una vez creada:  
 ```cmd
-docker run -d --name nombre_contenedor -p 8069:8069 -p 8071:8071 -p 8072:8072 --privileged --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro nombre_imagen
+docker run -dt --name nombre_contenedor -p 8069:8069 -p 8071:8071 -p 8072:8072 nombre_imagen 
 ```
 
 Una vez iniciado el contenedor puedes entrar en éste con:  
@@ -29,9 +29,9 @@ Una vez iniciado el contenedor puedes entrar en éste con:
 docker exec -it nombre_contenedor /bin/bash
 ```
   
-  Una vez dentro bastará con lanzar el servicio de odoo con  
+  Una vez dentro bastará con lanzar odoo con  
   ```bash
-  systemctl start odoo
+  su - odoo -c /home/odoo/odoo/odoo-bin -c /home/odoo/odoo.conf
   ```  
   y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)  
   
