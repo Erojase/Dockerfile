@@ -31,7 +31,7 @@ docker exec -it nombre_contenedor /bin/bash
   
   Una vez dentro bastará con lanzar odoo con  
   ```bash
-  su - odoo -c /home/odoo/odoo/odoo-bin -c /home/odoo/odoo.conf
+  /home/odoo/odoo/odoo-bin -c /home/odoo/odoo.conf
   ```  
   y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)  
   
