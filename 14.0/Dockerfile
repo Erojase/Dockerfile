@@ -1,4 +1,4 @@
-FROM jrei/systemd-debian  
+FROM debian:buster  
 RUN apt update && apt -y upgrade &&\
     apt install -y sudo &&\
     apt-get install -y wget &&\
@@ -58,7 +58,7 @@ COPY odoo.conf /home/odoo/
 COPY pg_hba.conf /etc/postgresql/12/main/
 
     #Import odoo service file
-COPY odoo.service /etc/systemd/system/
+# COPY odoo.service /etc/systemd/system/
    
     #Enable Odoo service on Boot 
 #RUN systemctl enable /etc/systemd/system/odoo.service
@@ -66,7 +66,7 @@ COPY odoo.service /etc/systemd/system/
     #Changanging owner of some files
 RUN sudo chown odoo:1000 /home/odoo/odoo.conf &&\
     sudo chown postgres:104 /etc/postgresql/12/main/pg_hba.conf &&\
-    sudo chown odoo:1000 /etc/systemd/system/odoo.service &&\
+    # sudo chown odoo:1000 /etc/systemd/system/odoo.service &&\
     exit
 
 EXPOSE 8069 8071 8072
