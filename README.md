@@ -2,7 +2,7 @@
 
 # Dockerfile para Odoo
 
-Dockerfile y recursos para Debian arrancado con Systemd
+
 
 Antes de nada hay que tener instalado Docker  
 [Docker para Linux](https://docs.docker.com/engine/install/ubuntu/)  
@@ -49,7 +49,7 @@ Root | --- |
 
 # Odoo Dockerfile
 
-Dockerfile and resources for Debian booted with Systemd
+
 
 First of all you have to have Docker installed  
 [Docker for Linux](https://docs.docker.com/engine/install/ubuntu/)  
