@@ -65,7 +65,7 @@ COPY pg_hba.conf /etc/postgresql/12/main/
 
     #Changanging owner of some files
 RUN sudo chown odoo:1000 /home/odoo/odoo.conf &&\
-    sudo chown postgres:104 /etc/postgresql/12/main/pg_hba.conf &&\
+    sudo chown postgres:104 /etc/postgresql/10/main/pg_hba.conf &&\
     # sudo chown odoo:1000 /etc/systemd/system/odoo.service &&\
     exit
 
