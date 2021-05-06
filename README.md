@@ -38,11 +38,8 @@ docker exec -it nombre_contenedor /bin/bash
   
 # Usuarios
 Usuario | Contraseña |
---- | --- |
 Root | --- |
---- | --- |
 Odoo | Odoo |
---- | --- |
 Postgres | Odoo |
   
 
