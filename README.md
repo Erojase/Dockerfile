@@ -35,16 +35,19 @@ docker exec -it nombre_contenedor /bin/bash
   ```  
   y dirigirte en el navegador web a la dirección [localhost:8069](http://localhost:8069/)  
   
-  
+    
+    
 # Usuarios
-Usuario | Contraseña |  
-Root | --- |  
-Odoo | Odoo |  
+Usuario | Contraseña |
+--- | --- | 
+Odoo | Odoo |
 Postgres | Odoo |
-  
+Root | --- |    
 
-  
-  # Odoo Dockerfile
+  <br /><br /><br />
+  <br /><br /><br />
+
+# Odoo Dockerfile
 
 Dockerfile and resources for Debian booted with Systemd
 
@@ -60,21 +63,30 @@ To launch the Dockerfile and build the image, use the command:
 ```cmd
 docker build C:/path/to/your/dockerfile -t image_name
 ```
- The path /to/your/dockerfile should be the path of the folder where the dockerfile file is located
-  
+ The path /to/your/dockerfile should be the path of the folder where the dockerfile file is located  
+ If you enter your Dockerfile folder from the terminal you can replace the path with a period ```docker build . -t image_name```
 
 To run the image once it is created:
 ```cmd
-docker run -d --name container_name -p 8069:8069 -p 8071:8071 -p 8072:8072 --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro image_name
+docker run -dt --name container_name -p 8069:8069 -p 8071:8071 -p 8072:8072 image_name
 ```
 
 Once the container is started, you can enter it with:
 ```cmd
-docker exec -it --user odoo container_name /bin/bash
+docker exec -it container_name /bin/bash
 ```
   
 Once inside, just launch the odoo service with
 ```bash
-systemctl start odoo
+/home/odoo/odoo/odoo-bin -c /home/odoo/odoo.conf
 ```
-and go in the web browser to the address [localhost: 8069](http: // localhost: 8069 /)
+and go in the web browser to the address [localhost:8069](http://localhost:8069/)    
+# Users
+User | Password |
+--- | --- |
+Odoo | Odoo |
+Postgres | Odoo |
+Root | --- |
+
+  <br /> <br /> <br />
+  <br /> <br /> <br />
