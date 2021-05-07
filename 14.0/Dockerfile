@@ -57,6 +57,8 @@ COPY odoo.conf /home/odoo/
     #Import Postgres configuration file
 COPY pg_hba.conf /etc/postgresql/12/main/
 
+COPY entrypoint.sh /
+
     #Import odoo service file
 # COPY odoo.service /etc/systemd/system/
    
@@ -65,11 +67,15 @@ COPY pg_hba.conf /etc/postgresql/12/main/
 
     #Changanging owner of some files
 RUN sudo chown odoo:1000 /home/odoo/odoo.conf &&\
-    sudo chown postgres:104 /etc/postgresql/10/main/pg_hba.conf &&\
+    sudo chown postgres:104 /etc/postgresql/12/main/pg_hba.conf &&\
     # sudo chown odoo:1000 /etc/systemd/system/odoo.service &&\
     exit
 
 EXPOSE 8069 8071 8072
+
+
+
+ENTRYPOINT [ "/entrypoint.sh" ]
 
 #Default user when start
 USER odoo
