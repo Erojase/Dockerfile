@@ -1,5 +1,7 @@
 # Tabla de Contenicos
 
+- [Pre-instalación](#Pre-instalación)
+- [Instalación](Instalación)
 - [English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile)
 
 # Dockerfile para Odoo
