@@ -24,26 +24,26 @@ docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
 
  <br/>La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile  
- **1.b-** Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un punto 
+ <h3>1.b-</h3> Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un punto 
  ```cmd  
  docker build . -t nombre_imagen
  ```
 
-<br/>**2-** Para correr la imagen una vez creada:  
+<br/><h3>2-</h3> Para correr la imagen una vez creada:  
 ```cmd
 docker run -dt --name nombre_contenedor -p 8069:8069 -p 8071:8071 -p 8072:8072 nombre_imagen 
 ```
 
-<br/>**3.a-** Una vez iniciado el contenedor puedes entrar en éste con:  
+<br/><h3>3.a-</h3> Una vez iniciado el contenedor puedes entrar en éste con:  
 ```cmd
 docker exec -it nombre_contenedor /bin/bash
 ```  
-**3.b-** Por defecto se entra al contenedor con el usuario Odoo, si se quiere entrar con el usuario root puedes usar el siguiente comando:  
+<h3>3.b-</h3> Por defecto se entra al contenedor con el usuario Odoo, si se quiere entrar con el usuario root puedes usar el siguiente comando:  
 ```cmd
 docker exec -it --user root nombre_contenedor /bin/bash
 ```
 
- <br/> **4-** Una vez dentro bastará con lanzar odoo con  
+ <br/> <h3>4-</h3> Una vez dentro bastará con lanzar odoo con  
   ```bash
   /home/odoo/odoo/odoo-bin -c /home/odoo/odoo.conf
   ```  
