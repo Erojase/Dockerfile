@@ -11,6 +11,7 @@ Antes de nada hay que tener instalado Docker
   <br/><br/>
 # Pre-instalación  
 Si se esta utilizando un sistema Linux se deberá comprobar si el archivo ```entrypoint.sh``` tiene los permisos de ejecución, en caso de que no los tenga habrá que ponérselos con el siguiente comando situado en el directorio del archivo:
+1-  
 ```bash
 sudo chmod +x entrypoint.sh
 ```
