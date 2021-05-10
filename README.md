@@ -2,8 +2,9 @@
 
 - [Pre-instalación](#Pre-instalación)
 - [Instalación](Instalación)
-	- [1.a](#1.a) 
-	- [1.b](#1.b)
+	- [Construcción de imagen ver.1](#1a) 
+	- [Construcción de imagen ver.2](#1b)
+	- [Ejecutar la imagen](#2)
 - [English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile)
 
 # Dockerfile para Odoo
