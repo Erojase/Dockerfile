@@ -10,7 +10,7 @@ Antes de nada hay que tener instalado Docker
 [Docker para MacOs](https://docs.docker.com/docker-for-mac/install/)  
   
 # Instalación 
-Los siguientes comandos deberán lanzarse desde la treminal de comandos del sistema
+Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema
  <br/>
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```cmd
