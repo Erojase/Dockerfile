@@ -17,7 +17,10 @@ Para lanzar el Dockerfile y construir la imagen se utiliza el comando:
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
  La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile  
- Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un punto ```docker build . -t nombre_imagen```
+ Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un punto 
+ ```cmd  
+ docker build . -t nombre_imagen
+ ```
 
 Para correr la imagen una vez creada:  
 ```cmd
@@ -27,8 +30,12 @@ docker run -dt --name nombre_contenedor -p 8069:8069 -p 8071:8071 -p 8072:8072 n
 Una vez iniciado el contenedor puedes entrar en éste con:  
 ```cmd
 docker exec -it nombre_contenedor /bin/bash
+```  
+Por defecto se entra al contenedor con el usuario Odoo, si se quiere entrar con el usuario root puedes usar el siguiente comando:  
+```cmd
+docker exec -it --user root nombre_contenedor /bin/bash
 ```
-  
+
   Una vez dentro bastará con lanzar odoo con  
   ```bash
   /home/odoo/odoo/odoo-bin -c /home/odoo/odoo.conf
@@ -40,8 +47,8 @@ docker exec -it nombre_contenedor /bin/bash
 # Usuarios
 Usuario | Contraseña |
 --- | --- | 
-Odoo | Odoo |
-Postgres | Odoo |
+Odoo | odoo |
+Postgres | odoo |
 Root | --- |    
 
   <br /><br /><br />
@@ -74,6 +81,10 @@ docker run -dt --name container_name -p 8069:8069 -p 8071:8071 -p 8072:8072 imag
 Once the container is started, you can enter it with:
 ```cmd
 docker exec -it container_name /bin/bash
+```  
+By default you enter the container with the Odoo user, if you want to enter with the root user you can use the following command:  
+```cmd
+docker exec -it --user root nombre_contenedor /bin/bash
 ```
   
 Once inside, just launch the odoo service with
@@ -84,8 +95,8 @@ and go in the web browser to the address [localhost:8069](http://localhost:8069/
 # Users
 User | Password |
 --- | --- |
-Odoo | Odoo |
-Postgres | Odoo |
+Odoo | odoo |
+Postgres | odoo |
 Root | --- |
 
   <br /> <br /> <br />
