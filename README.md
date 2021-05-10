@@ -14,7 +14,7 @@ Si se esta utilizando un sistema Linux se deberá comprobar si el archivo ```ent
 ```bash
 sudo chmod +x entrypoint.sh
 ```
-<img src="https://ibb.co/K7trmL8">
+<img src="https://i.ibb.co/QnWKXCx/entrypoint.png">
 
 # Instalación 
 Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema
