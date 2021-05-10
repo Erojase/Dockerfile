@@ -11,22 +11,23 @@ Antes de nada hay que tener instalado Docker
   
 # Instalación 
 Los siguientes comandos deberán lanzarse desde la treminal de comandos del sistema
- 
+ <br/>
 Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```cmd
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
+<br/>
  La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile  
  Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un punto 
  ```cmd  
  docker build . -t nombre_imagen
  ```
-
+<br/>
 Para correr la imagen una vez creada:  
 ```cmd
 docker run -dt --name nombre_contenedor -p 8069:8069 -p 8071:8071 -p 8072:8072 nombre_imagen 
 ```
-
+<br/>
 Una vez iniciado el contenedor puedes entrar en éste con:  
 ```cmd
 docker exec -it nombre_contenedor /bin/bash
@@ -35,7 +36,7 @@ Por defecto se entra al contenedor con el usuario Odoo, si se quiere entrar con 
 ```cmd
 docker exec -it --user root nombre_contenedor /bin/bash
 ```
-
+<br/>
   Una vez dentro bastará con lanzar odoo con  
   ```bash
   /home/odoo/odoo/odoo-bin -c /home/odoo/odoo.conf
