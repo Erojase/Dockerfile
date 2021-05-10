@@ -2,8 +2,8 @@
 
 - [Pre-instalación](#Pre-instalación)
 - [Instalación](Instalación)
-	- [Construcción de imagen ver.1](#1a) 
-	- [Construcción de imagen ver.2](#1b)
+	- [Construcción de imagen ver.1](##1-ver1) 
+	- [Construcción de imagen ver.2](##1-ver2)
 	- [Ejecutar la imagen](#2)
 - [English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile)
 
