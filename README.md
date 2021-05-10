@@ -17,8 +17,8 @@ sudo chmod +x entrypoint.sh
 
 # Instalación 
 Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema
- <br/><img src="https://camo.githubusercontent.com/68ae8ebe6a1630b03e907bdd1e675d076cc695cb9a7852d369873cdd7076edf9/687474703a2f2f692e696d6775722e636f6d2f7657654c5373742e706e67">
-**1.a-** Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
+ <br/>
+<h1>1.a-</h1> Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```cmd
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
