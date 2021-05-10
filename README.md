@@ -1,7 +1,7 @@
 # Tabla de Contenicos
 
 - [Pre-instalación](#Pre-instalación)
-- [Instalación](Instalación)
+- [Instalación](#instalación)
 	- [Construcción de imagen ver.1](#1-ver1) 
 	- [Construcción de imagen ver.2](#1-ver2)
 	- [Ejecutar la imagen](#2)
