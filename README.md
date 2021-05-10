@@ -1,6 +1,6 @@
 # Tabla de Contenicos
 
-<li>[English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile)</li>
+<li><div href="https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile">English version</div></li>
 
 # Dockerfile para Odoo
 
