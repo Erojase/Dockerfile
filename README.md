@@ -2,9 +2,11 @@
 
 - [Pre-instalación](#Pre-instalación)
 - [Instalación](Instalación)
-	- [Construcción de imagen ver.1](##1-ver1) 
-	- [Construcción de imagen ver.2](##1-ver2)
+	- [Construcción de imagen ver.1](#1-ver1) 
+	- [Construcción de imagen ver.2](#1-ver2)
 	- [Ejecutar la imagen](#2)
+	- [Entrar al contenedor como el usuario odoo](#3-ver1)
+	- [Entrar al contenedor como el usuario root](#3-ver2)
 - [English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile)
 
 # Dockerfile para Odoo
