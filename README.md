@@ -2,7 +2,8 @@
 
 - [Pre-instalación](#Pre-instalación)
 - [Instalación](Instalación)
-	- [Markup](#markup) 
+	- [1.a](#1.a) 
+	- [1.b](#1.b)
 - [English version](https://github.com/Erojase/odoo-dockerfile/blob/main/README.md#odoo-dockerfile)
 
 # Dockerfile para Odoo
@@ -24,19 +25,19 @@ sudo chmod +x entrypoint.sh
 # Instalación 
 Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema
  <br/><br/>
-<h5>1.a</h5>Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
+<h4>1.a</h4>Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```cmd
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
 
  <br/>La ruta/de/tu/dockerfile deberá ser la ruta de la carpeta en la que esta situado el archivo dockerfile  
- # **1.b**
+<h4>1.b</h4>
  Si entras a la carpeta de tu Dockerfile desde la terminal puedes sustituir la ruta por un punto 
  ```cmd  
  docker build . -t nombre_imagen
  ```
 
-<br/>**2-** Para correr la imagen una vez creada:  
+<br/><h4>2</h4> Para correr la imagen una vez creada:  
 ```cmd
 docker run -dt --name nombre_contenedor -p 8069:8069 -p 8071:8071 -p 8072:8072 nombre_imagen 
 ```
