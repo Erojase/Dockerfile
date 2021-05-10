@@ -18,7 +18,7 @@ sudo chmod +x entrypoint.sh
 # Instalación 
 Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema
  <br/>
-<h2>1.a-</h2> Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
+<h3>1.a-</h3> Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```cmd
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
 ```  
