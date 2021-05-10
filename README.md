@@ -11,14 +11,13 @@ Antes de nada hay que tener instalado Docker
   <br/><br/>
 # Pre-instalación  
 Si se esta utilizando un sistema Linux se deberá comprobar si el archivo ```entrypoint.sh``` tiene los permisos de ejecución, en caso de que no los tenga habrá que ponérselos con el siguiente comando situado en el directorio del archivo:
-1-  
 ```bash
 sudo chmod +x entrypoint.sh
 ```
 
 # Instalación 
 Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema
- <br/>
+ <br/><img src="https://camo.githubusercontent.com/68ae8ebe6a1630b03e907bdd1e675d076cc695cb9a7852d369873cdd7076edf9/687474703a2f2f692e696d6775722e636f6d2f7657654c5373742e706e67">
 **1.a-** Para lanzar el Dockerfile y construir la imagen se utiliza el comando:  
 ```cmd
 docker build C:/ruta/de/tu/dockerfile -t nombre_imagen
