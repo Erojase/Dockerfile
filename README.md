@@ -8,7 +8,13 @@ Antes de nada hay que tener instalado Docker
 [Docker para Linux](https://docs.docker.com/engine/install/ubuntu/)  
 [Docker para Windows](https://docs.docker.com/docker-for-windows/install/)  
 [Docker para MacOs](https://docs.docker.com/docker-for-mac/install/)  
-  
+  <br/><br/>
+# Pre-instalación  
+Si se esta utilizando un sistema Linux se deberá comprobar si el archivo ```entrypoint.sh``` tiene los permisos de ejecución, en caso de que no los tenga habrá que ponérselos con el siguiente comando situado en el directorio del archivo:
+```bash
+sudo chmod +x entrypoint.sh
+```
+
 # Instalación 
 Los siguientes comandos deberán lanzarse desde la terminal de comandos del sistema
  <br/>
