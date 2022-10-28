@@ -1,4 +1,4 @@
-# Tabla de Contenicos
+# Tabla de Contenidos
 
 - [Pre-instalación](#Pre-instalación)
 - [Instalación](#instalación)
